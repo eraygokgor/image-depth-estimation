@@ -35,5 +35,6 @@ class DepthEstimationModel:
         self.save_colored_depth(depth_numpy, output_path)
         return f"Image saved successfully at {output_path}."
 
+
 model = DepthEstimationModel()
 model.calculate_depthmap("test.jpg", "output.png")
